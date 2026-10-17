@@ -1,0 +1,67 @@
+{
+ "2026-10-15": {
+  "tipo": "seminario",
+  "horas": 6.5,
+  "ejercicios": [
+   {
+    "titulo": "Clasificación de datos de Iris con Perceptrón Multicapa",
+    "operaciones": [
+     4,
+     6
+    ],
+    "descripcion": "Se desarrolló un modelo de clasificación utilizando Perceptrón Multicapa para predecir las clases de los datos de Iris, utilizando Scikit-learn.",
+    "librerias": [
+     "sklearn.datasets",
+     "sklearn.model_selection",
+     "sklearn.preprocessing",
+     "sklearn.neural_network"
+    ],
+    "pasos": [
+     "Se importaron las librerías necesarias.",
+     "Se cargaron los datos de Iris.",
+     "Se separaron los datos en conjuntos de entrenamiento y prueba.",
+     "Se normalizaron los datos de entrenamiento y prueba.",
+     "Se configuró un modelo de Perceptrón Multicapa con dos capas ocultas de 10 neuronas cada una.",
+     "Se entrenó el modelo con los datos de entrenamiento.",
+     "Se realizaron predicciones con el conjunto de prueba.",
+     "Se imprimieron las predicciones y los datos reales de prueba."
+    ],
+    "codigo": "from sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.neural_network import MLPClassifier #PERCEPTRÓN MULTICAPA (CLASIFICACIÓN)\n\niris= load_iris()\nx= iris.data\ny= iris.target\n\nx_train, x_test, y_train, y_test= train_test_split(x,y,test_size=0.2, random_state=42)\n\nscaler= StandardScaler()\nx_train= scaler.fit_transform(x_train)\nx_test= scaler.transform(x_test)\n\nmodel= MLPClassifier(\n    hidden_layer_sizes=(10,10),\n    activation='relu',\n    solver='adam',\n    random_state=42\n)\n\nmodel.fit(x_train, y_train)\n\ny_pred= model.predict(x_test)\nprint(y_pred)\nprint(y_test)\n\n",
+    "resultado": "",
+    "archivo": "TALLER_AS_011.ipynb"
+   },
+   {
+    "titulo": "Clasificación de pasajeros del Titanic mediante Regresión Logística",
+    "operaciones": [
+     10
+    ],
+    "descripcion": "Se clasificó la supervivencia de pasajeros del Titanic utilizando Regresión Logística con Scikit-learn.",
+    "librerias": [
+     "sklearn.datasets",
+     "sklearn.model_selection",
+     "sklearn.linear_model",
+     "sklearn.preprocessing",
+     "sklearn.metrics"
+    ],
+    "pasos": [
+     "Se importaron las librerías necesarias.",
+     "Se cargó el conjunto de datos del Titanic.",
+     "Se definieron las características y las etiquetas.",
+     "Se realizó un análisis exploratorio de los datos.",
+     "Se dividieron los datos en conjuntos de entrenamiento y prueba.",
+     "Se estandarizaron los datos de entrenamiento y prueba.",
+     "Se creó un modelo de Regresión Logística.",
+     "Se entrenó el modelo con los datos de entrenamiento.",
+     "Se realizaron predicciones con los datos de prueba.",
+     "Se evaluó el rendimiento del modelo."
+    ],
+    "codigo": "from sklearn.datasets import fetch_openml\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.metrics import accuracy_score, classification_report\n\ntitanic = fetch_openml(\"titanic\", version = 2, as_frame = False)\n\nx = titanic.data\ny = titanic.target\nnombres = titanic.target_names\ncaracteristicas = titanic.feature_names\n\nprint(\"--Análisis Exploratorio--\")\nprint(y.shape)\nprint(x.shape)\nprint(nombres)\nprint(caracteristicas)\nprint(len(caracteristicas))\nprint(y)\n\nx_train, x_test, y_train, y_test = train_test_split(x,y,test_size = 0.3, random_state= 42)\n\nscaler = StandardScaler()\nx_train = scaler.fit_transform(x_train)\nx_test = scaler.transform(x_test)\n\nmodel = LogisticRegression(C=0.05)\nmodel.fit(x_train, y_train)\n\nprint(\"Predicciones del Modelo\")\ny_pred = model.predict(x_test)\nprint(y_pred)\nprint(\"Etiquetas Reales\")\nprint(y_test)\n\nprint(\"Métricas del modelo\")\nprint(accuracy_score(y_test, y_pred))\nprint(\"Reporte de clasificación\")\nprint(classification_report(y_test, y_pred))\n\nprint(\"Prediccion Individual\")\nidx = 9\nmuestra = x_test[idx]\nmuestra\n\nprediccion = model.predict(muestra.reshape(1,-1))\nprint(prediccion)\nprint(y_test[idx])\nif prediccion == \"1\":\n  print(\"Se salva\")\nelse:\n  print(\"Se murió\")",
+    "resultado": "75% de Precisión",
+    "archivo": "TALLER_AS_002.ipynb"
+   }
+  ],
+  "operaciones": [],
+  "turno": "M",
+  "asistencia": "tarde"
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "ollama": {
+    "url": "http://localhost:11434",
+    "modelo": "qwen2.5:7b",
+    "temperatura": 0.3,
+    "timeout_segundos": 600
+  },
+  "estudiante": {
+    "cfp": "Arequipa – Puno - ETI",
+    "nombre": "Fabián Salomón Cárdenas Estrada",
+    "id": "001466388",
+    "bloque": "51PIADS401",
+    "carrera": "Ingeniería de Software con Inteligencia Artificial",
+    "instructor": "Jesús Romero Villanueva",
+    "direccion_zonal": "Arequipa - Puno"
+  },
+  "semestre": {
+    "numero": "IV",
+    "del": "17 de Agosto",
+    "al": "10 de Diciembre",
+    "anio": 2026
+  },
+  "empresa": {
+    "codigo_informe": "",
+    "area_rotacion": "Informática / Cursos EADP / Escuela de Alta Dirección Profesional",
+    "etiqueta_dia": "Empresa:",
+    "etiqueta_tecnologia": "Tecnología (SENATI):"
+  },
+  "seminario": {
+    "codigo_informe": "89001677",
+    "area_rotacion": "Aprendizaje de uso de las librerias en Python / Seminario de Complementación Práctica I",
+    "etiqueta_dia": "Seminario de Complementación Práctica I:"
+  },
+  "pea": "datos/pea_piad_iv.json",
+  "firmas": {
+    "alumno": "recursos/firma_alumno.jpeg",
+    "monitora": "recursos/firma_monitora.jpeg"
+  },
+  "colores_asistencia": {
+    "temprano": "92D050",
+    "tarde": "FFFF00",
+    "falta_injustificada": "FF0000",
+    "falta_justificada": "9DC3E6"
+  }
+}

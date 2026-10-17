@@ -1,0 +1,87 @@
+{
+ "codigo": "PIAD-E4-202310",
+ "carrera": "Ingeniería de Software con Inteligencia Artificial (PIAD-IV)",
+ "semestre": "IV",
+ "operaciones": [
+  {
+   "n": 1,
+   "modulo": "Módulos y paquetes para Machine Learning con Python",
+   "texto": "Realiza operaciones con las Librerías Pandas y Numpy"
+  },
+  {
+   "n": 2,
+   "modulo": "Módulos y paquetes para Machine Learning con Python",
+   "texto": "Estudia el uso de las Librerías Scikit-learn y Pytorch"
+  },
+  {
+   "n": 3,
+   "modulo": "Módulos y paquetes para Machine Learning con Python",
+   "texto": "Estudia el uso de las Librerías SciPy y Nltk"
+  },
+  {
+   "n": 4,
+   "modulo": "Módulos y paquetes para Machine Learning con Python",
+   "texto": "Estudia el uso de las Librerías Tensorflow y Keras"
+  },
+  {
+   "n": 5,
+   "modulo": "Módulos y paquetes para Machine Learning con Python",
+   "texto": "Realiza operaciones con las librerías Matplotlib y Seaborn"
+  },
+  {
+   "n": 6,
+   "modulo": "Fundamentos y algoritmia para Inteligencia Artificial",
+   "texto": "Estudia los fundamentos de Inteligencia Artificial"
+  },
+  {
+   "n": 7,
+   "modulo": "Fundamentos y algoritmia para Inteligencia Artificial",
+   "texto": "Realiza operaciones con álgebra lineal, vectores y matrices"
+  },
+  {
+   "n": 8,
+   "modulo": "Fundamentos y algoritmia para Inteligencia Artificial",
+   "texto": "Estudia los principios y variables estadísticas"
+  },
+  {
+   "n": 9,
+   "modulo": "Fundamentos y algoritmia para Inteligencia Artificial",
+   "texto": "Realiza operaciones con la varianza y desviación estándar"
+  },
+  {
+   "n": 10,
+   "modulo": "Machine Learning y Deep Learning",
+   "texto": "Crea programas con algoritmos de aprendizaje supervisado"
+  },
+  {
+   "n": 11,
+   "modulo": "Machine Learning y Deep Learning",
+   "texto": "Crea programas con algoritmos de aprendizaje no supervisado"
+  },
+  {
+   "n": 12,
+   "modulo": "Machine Learning y Deep Learning",
+   "texto": "Define la estructura y crea una red neuronal artificial"
+  },
+  {
+   "n": 13,
+   "modulo": "Machine Learning y Deep Learning",
+   "texto": "Describe los principios de visión computacional y Machine Learning"
+  },
+  {
+   "n": 14,
+   "modulo": "Artificial Intelligence with Machine Learning in Java (Oracle)",
+   "texto": "Explica el uso de la IA"
+  },
+  {
+   "n": 15,
+   "modulo": "Artificial Intelligence with Machine Learning in Java (Oracle)",
+   "texto": "Utiliza recursividad en la programación"
+  },
+  {
+   "n": 16,
+   "modulo": "Artificial Intelligence with Machine Learning in Java (Oracle)",
+   "texto": "Construye algoritmo de árbol de decisiones"
+  }
+ ]
+}

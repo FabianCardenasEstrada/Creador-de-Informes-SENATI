@@ -1,0 +1,4 @@
+python-docx>=1.1
+matplotlib>=3.7
+# Opcional (solo si tienes Microsoft Word y quieres el PDF automático):
+# docx2pdf
